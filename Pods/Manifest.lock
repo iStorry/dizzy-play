@@ -1,0 +1,54 @@
+PODS:
+  - Advance (0.9.1)
+  - anim (1.2.3)
+  - BiometricAuth (2.0.0)
+  - Cache (4.1.2)
+  - Hue (3.0.0)
+  - ImagePicker (3.0.0)
+  - Imaginary (3.0.2):
+    - Cache (~> 4.0)
+  - Lightbox (2.0.1):
+    - Hue (~> 3.0)
+    - Imaginary (~> 3.0)
+  - Pastel (0.3.0)
+  - PeekPop (1.0.0)
+  - Spruce (1.0.0)
+  - SwiftySound (0.7.0)
+
+DEPENDENCIES:
+  - Advance (from `https://github.com/steadicat/Advance.git`)
+  - anim
+  - BiometricAuth (~> 2.0.0)
+  - ImagePicker
+  - Lightbox
+  - Pastel
+  - PeekPop (~> 1.0)
+  - Spruce (~> 1.0.0)
+  - SwiftySound
+
+EXTERNAL SOURCES:
+  Advance:
+    :git: https://github.com/steadicat/Advance.git
+
+CHECKOUT OPTIONS:
+  Advance:
+    :commit: 49ac9035ce74310dca01f4d25705d5c46774c6e6
+    :git: https://github.com/steadicat/Advance.git
+
+SPEC CHECKSUMS:
+  Advance: 58f115c484cded634ffe529fcf6d39e741de1a44
+  anim: 3982063650a0f7a209af2a71fc9ad1fd4dd9fa7f
+  BiometricAuth: 918d48b26eaa610876cebd8163aede05611729ec
+  Cache: bd0233fc688b5e83a27bcd87807db7e6f23adcc5
+  Hue: b8fe1e43eef13631331eebecb2198b68e2622f95
+  ImagePicker: 973953c25960fe04729a7082a56194321c6762d2
+  Imaginary: d675200546110e305d6a26db6267c0622ffe5e6b
+  Lightbox: b72d18d05b57ba55dbac2eb0d7dafdc934205cf3
+  Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
+  PeekPop: dcac0f339476b99eb50f8e3bc584f332c744ecf1
+  Spruce: 07ffdb990923f500111fcbf13d102e16075b230e
+  SwiftySound: bca0bb721690fb65249f4776cb0875abd98e9941
+
+PODFILE CHECKSUM: 39a60b8f836c8ee69ae54951fcf0c6e908e73367
+
+COCOAPODS: 1.3.1

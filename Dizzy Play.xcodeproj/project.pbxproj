@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911FBD0A1FBDA1800025AE40 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FBD091FBDA17F0025AE40 /* PreviewViewController.swift */; };
+		915CE4BD1FBC71120098955E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE4BC1FBC71120098955E /* ListView.swift */; };
+		915CE4C01FBC71580098955E /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE4BF1FBC71580098955E /* ListCell.swift */; };
 		91660FBA1FBC4718008593DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91660FB91FBC4718008593DA /* AppDelegate.swift */; };
-		91660FBC1FBC4718008593DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91660FBB1FBC4718008593DA /* ViewController.swift */; };
 		91660FBF1FBC4718008593DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91660FBD1FBC4718008593DA /* Main.storyboard */; };
 		91660FC11FBC4718008593DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91660FC01FBC4718008593DA /* Assets.xcassets */; };
 		91660FC41FBC4718008593DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91660FC21FBC4718008593DA /* LaunchScreen.storyboard */; };
+		91E2E9F31FBC478A00D2568D /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2E9F21FBC478A00D2568D /* SplashView.swift */; };
+		91E2E9F51FBC4C0800D2568D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2E9F41FBC4C0800D2568D /* ActivityView.swift */; };
+		B908563B3ACDA6AF412AAE60 /* Pods_Dizzy_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B3F26884EB50BB4910D7A3 /* Pods_Dizzy_Play.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04B5ED531C53DA36CA510A04 /* Pods-Dizzy Play.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dizzy Play.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dizzy Play/Pods-Dizzy Play.debug.xcconfig"; sourceTree = "<group>"; };
+		64B3F26884EB50BB4910D7A3 /* Pods_Dizzy_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dizzy_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E565A1FC45169218ED85E93 /* Pods-Dizzy Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dizzy Play.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dizzy Play/Pods-Dizzy Play.release.xcconfig"; sourceTree = "<group>"; };
+		911FBD091FBDA17F0025AE40 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		915CE4BC1FBC71120098955E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		915CE4BF1FBC71580098955E /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		91660FB61FBC4718008593DA /* Dizzy Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dizzy Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91660FB91FBC4718008593DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91660FBB1FBC4718008593DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91660FBE1FBC4718008593DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91660FC01FBC4718008593DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91660FC31FBC4718008593DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91660FC51FBC4718008593DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E2E9F21FBC478A00D2568D /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		91E2E9F41FBC4C0800D2568D /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B908563B3ACDA6AF412AAE60 /* Pods_Dizzy_Play.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039BA9F8062C9BD33CE7E717 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04B5ED531C53DA36CA510A04 /* Pods-Dizzy Play.debug.xcconfig */,
+				6E565A1FC45169218ED85E93 /* Pods-Dizzy Play.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C6C895A8CB06AB5773291E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64B3F26884EB50BB4910D7A3 /* Pods_Dizzy_Play.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		911FBD081FBDA1750025AE40 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				911FBD091FBDA17F0025AE40 /* PreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		915CE4BB1FBC70FD0098955E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				915CE4BE1FBC71490098955E /* Cell */,
+				915CE4BC1FBC71120098955E /* ListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		915CE4BE1FBC71490098955E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				915CE4BF1FBC71580098955E /* ListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		91660FAD1FBC4718008593DA = {
 			isa = PBXGroup;
 			children = (
 				91660FB81FBC4718008593DA /* Dizzy Play */,
 				91660FB71FBC4718008593DA /* Products */,
+				039BA9F8062C9BD33CE7E717 /* Pods */,
+				2C6C895A8CB06AB5773291E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +111,49 @@
 		91660FB81FBC4718008593DA /* Dizzy Play */ = {
 			isa = PBXGroup;
 			children = (
-				91660FB91FBC4718008593DA /* AppDelegate.swift */,
-				91660FBB1FBC4718008593DA /* ViewController.swift */,
-				91660FBD1FBC4718008593DA /* Main.storyboard */,
+				91660FCB1FBC473A008593DA /* Delegate */,
+				91660FCC1FBC4742008593DA /* Storyboards */,
+				91E2E9F01FBC476F00D2568D /* Views */,
 				91660FC01FBC4718008593DA /* Assets.xcassets */,
-				91660FC21FBC4718008593DA /* LaunchScreen.storyboard */,
 				91660FC51FBC4718008593DA /* Info.plist */,
 			);
 			path = "Dizzy Play";
+			sourceTree = "<group>";
+		};
+		91660FCB1FBC473A008593DA /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				91660FB91FBC4718008593DA /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		91660FCC1FBC4742008593DA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				91660FC21FBC4718008593DA /* LaunchScreen.storyboard */,
+				91660FBD1FBC4718008593DA /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		91E2E9F01FBC476F00D2568D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				911FBD081FBDA1750025AE40 /* Preview */,
+				915CE4BB1FBC70FD0098955E /* List */,
+				91E2E9F11FBC477C00D2568D /* Splash */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91E2E9F11FBC477C00D2568D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				91E2E9F21FBC478A00D2568D /* SplashView.swift */,
+				91E2E9F41FBC4C0800D2568D /* ActivityView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91660FC81FBC4718008593DA /* Build configuration list for PBXNativeTarget "Dizzy Play" */;
 			buildPhases = (
+				D444A996A17C054506B0A9EB /* [CP] Check Pods Manifest.lock */,
 				91660FB21FBC4718008593DA /* Sources */,
 				91660FB31FBC4718008593DA /* Frameworks */,
 				91660FB41FBC4718008593DA /* Resources */,
+				02774B8D4ACFBF9F95F51C56 /* [CP] Embed Pods Frameworks */,
+				ADD31929B9D0E35DE45856FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +226,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02774B8D4ACFBF9F95F51C56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dizzy Play/Pods-Dizzy Play-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Advance/Advance.framework",
+				"${BUILT_PRODUCTS_DIR}/BiometricAuth/BiometricAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
+				"${BUILT_PRODUCTS_DIR}/PeekPop/PeekPop.framework",
+				"${BUILT_PRODUCTS_DIR}/Spruce/Spruce.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
+				"${BUILT_PRODUCTS_DIR}/anim/anim.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Advance.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiometricAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PeekPop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spruce.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/anim.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dizzy Play/Pods-Dizzy Play-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD31929B9D0E35DE45856FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dizzy Play/Pods-Dizzy Play-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D444A996A17C054506B0A9EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dizzy Play-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91660FB21FBC4718008593DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91660FBC1FBC4718008593DA /* ViewController.swift in Sources */,
+				915CE4BD1FBC71120098955E /* ListView.swift in Sources */,
 				91660FBA1FBC4718008593DA /* AppDelegate.swift in Sources */,
+				91E2E9F31FBC478A00D2568D /* SplashView.swift in Sources */,
+				915CE4C01FBC71580098955E /* ListCell.swift in Sources */,
+				91E2E9F51FBC4C0800D2568D /* ActivityView.swift in Sources */,
+				911FBD0A1FBDA1800025AE40 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +447,15 @@
 		};
 		91660FC91FBC4718008593DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B5ED531C53DA36CA510A04 /* Pods-Dizzy Play.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FG72L72VC;
 				INFOPLIST_FILE = "Dizzy Play/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "app.test.Dizzy-Play";
+				PRODUCT_BUNDLE_IDENTIFIER = app.test.pushm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -286,12 +464,15 @@
 		};
 		91660FCA1FBC4718008593DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E565A1FC45169218ED85E93 /* Pods-Dizzy Play.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FG72L72VC;
 				INFOPLIST_FILE = "Dizzy Play/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "app.test.Dizzy-Play";
+				PRODUCT_BUNDLE_IDENTIFIER = app.test.pushm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

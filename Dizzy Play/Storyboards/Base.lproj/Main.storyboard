@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="own-6g-Sve">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View-->
+        <scene sceneID="TOn-Y6-Oa7">
+            <objects>
+                <viewController id="own-6g-Sve" customClass="SplashView" customModule="Dizzy_Play" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8fr-bM-bDi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG1-dR-agM">
+                                <rect key="frame" x="37" y="602" width="300" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ftv-PW-0ER"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.9408161317" green="0.2472841442" blue="0.2020103037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchLogin:" destination="own-6g-Sve" eventType="touchUpInside" id="PaB-hO-MYO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fva-9q-fPC" firstAttribute="bottom" secondItem="wG1-dR-agM" secondAttribute="bottom" constant="20" id="bnk-Js-IFd"/>
+                            <constraint firstItem="wG1-dR-agM" firstAttribute="width" secondItem="8fr-bM-bDi" secondAttribute="width" multiplier="0.8" id="f9b-cn-Rno"/>
+                            <constraint firstItem="wG1-dR-agM" firstAttribute="centerX" secondItem="fva-9q-fPC" secondAttribute="centerX" id="pMG-Uq-oOu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fva-9q-fPC"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="wG1-dR-agM" id="bcN-ja-PRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kv-0I-mIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jkk-wg-TCx">
+            <objects>
+                <navigationController storyboardIdentifier="navigationMain" automaticallyAdjustsScrollViewInsets="NO" id="Zuw-hH-jGp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dLg-DN-DRZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8hj-iB-EEG" kind="relationship" relationship="rootViewController" id="NZe-OB-up9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sod-rv-8dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="139"/>
+        </scene>
+        <!--Dizzy Play-->
+        <scene sceneID="4pU-4m-lRp">
+            <objects>
+                <tableViewController id="8hj-iB-EEG" customClass="ListView" customModule="Dizzy_Play" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SSd-S0-Pzz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dUf-gd-zDv" customClass="ListCell" customModule="Dizzy_Play" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dUf-gd-zDv" id="JK7-jZ-BVl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-HD-Yje">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7RG-HD-Yje" firstAttribute="top" secondItem="JK7-jZ-BVl" secondAttribute="top" id="12T-a4-N7g"/>
+                                        <constraint firstItem="7RG-HD-Yje" firstAttribute="leading" secondItem="JK7-jZ-BVl" secondAttribute="leading" id="Icu-3E-aw5"/>
+                                        <constraint firstAttribute="trailing" secondItem="7RG-HD-Yje" secondAttribute="trailing" id="Vdj-aZ-zSv"/>
+                                        <constraint firstAttribute="bottom" secondItem="7RG-HD-Yje" secondAttribute="bottom" id="gUM-SZ-k8V"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgView" destination="7RG-HD-Yje" id="kgh-G8-zI4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8hj-iB-EEG" id="hGb-Fn-cLE"/>
+                            <outlet property="delegate" destination="8hj-iB-EEG" id="FiN-Dl-N70"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dizzy Play" id="BbH-UE-psp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="yIg-Ea-cSb">
+                            <color key="tintColor" red="0.9408161317" green="0.2472841442" blue="0.2020103037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="openSheet:" destination="8hj-iB-EEG" id="RWB-Hn-RIv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3V-fy-Gpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="139"/>
+        </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="sMV-X7-CAe">
+            <objects>
+                <viewController storyboardIdentifier="PreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s69-Pa-m3u" customClass="PreviewViewController" customModule="Dizzy_Play" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3B6-AO-MIL"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZDA-gN-JPD"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="EsI-RQ-MGk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Sx-78-XHY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Sx-78-XHY" firstAttribute="top" secondItem="EsI-RQ-MGk" secondAttribute="top" id="WRV-tU-cKl"/>
+                            <constraint firstItem="ZDA-gN-JPD" firstAttribute="top" secondItem="2Sx-78-XHY" secondAttribute="bottom" id="ahk-HM-7KS"/>
+                            <constraint firstItem="2Sx-78-XHY" firstAttribute="leading" secondItem="EsI-RQ-MGk" secondAttribute="leading" id="iWw-LA-YmD"/>
+                            <constraint firstAttribute="trailing" secondItem="2Sx-78-XHY" secondAttribute="trailing" id="mDR-xc-gpM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g3U-2a-7aa"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="2Sx-78-XHY" id="9nP-dT-8nz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDc-ze-iqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="139"/>
+        </scene>
+    </scenes>
+</document>
